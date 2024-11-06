@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date Picker</title>
+</head>
+<body>
+  <input type="date" id="dateInput" onchange="sendDate()">
+  <script>
+    function sendDate() {
+      const selectedDate = document.getElementById("dateInput").value;
+      window.location.href = `thunkable://${selectedDate}`;
+    }
+  </script>
+</body>
+</html>
